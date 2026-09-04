@@ -15,7 +15,7 @@ This project can run on Vercel without PostgreSQL, but SQLite is not durable on 
 
 4. Deploy. Vercel uses `api/index.py` as the Django serverless entrypoint.
 
-The first request on a fresh instance runs Django migrations automatically. Because `/tmp` is temporary, demo accounts, products, and orders can disappear after an instance is recycled.
+The first request on a fresh instance runs Django migrations automatically. CSS and JavaScript are served by Django from the tracked `static/` directory. Because `/tmp` is temporary, demo accounts, products, and orders can disappear after an instance is recycled.
 
 ## Local development
 
